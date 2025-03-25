@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelBooking - Вход в личный кабинет</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="dark-theme">
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo test-0-logo">HotelBooking</a>
+                <nav class="nav">
+                    <a href="index.html#promo" class="nav__link test-0-nav-1">Акции</a>
+                    <a href="index.html#search" class="nav__link test-0-nav-2">Поиск</a>
+                    <a href="hroom.html" class="nav__link test-0-nav-3">Бронирование</a>
+                    <a href="login.html" class="nav__link test-0-nav-4">Личный кабинет</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Форма входа -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-card">
+                <h1 class="section-title">Вход в личный кабинет</h1>
+                
+                <form class="auth-form">
+                    <div class="form-group test-6-fpn">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    
+                    <div class="form-group test-6-fps">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" class="form-control" required>
+                        <a href="#" class="forgot-password">Забыли пароль?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block test-6-fbs">Войти</button>
+                    
+                    <div class="auth-footer">
+                        Нет аккаунта? <a href="register.html">Зарегистрироваться</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <div class="footer__logo">HotelBooking</div>
+                    <div class="footer__phone test-0-phone">8 (800) 300-25-11</div>
+                </div>
+                <div class="footer__col">
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__link">Возврат</a>
+                        <a href="#" class="footer__link">Обратная связь</a>
+                        <a href="#" class="footer__link">О компании</a>
+                        <a href="#" class="footer__link">Контакты</a>
+                    </nav>
+                </div>
+                <div class="footer__col">
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="images/tg.jpg" alt="telegram" width="24" height="24">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="images/ico.jpg" alt="vk" width="24" height="24">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="images/tg.jpg" alt="telegram" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                 Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Маска для телефона
+            const phoneInput = document.getElementById('phone');
+            
+            phoneInput.addEventListener('input', function(e) {
+                let x = e.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+                e.target.value = !x[2] ? x[1] : '+7 (' + x[2] + (x[3] ? ') ' + x[3] : '') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
+            });
+            
+            // Обработка формы входа
+            const authForm = document.querySelector('.auth-form');
+            if (authForm) {
+                authForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // Здесь должна быть логика входа
+                    window.location.href = 'profile.html';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

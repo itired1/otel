@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelBooking - Результаты поиска</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="dark-theme">
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo test-0-logo">HotelBooking</a>
+                <nav class="nav">
+                    <a href="index.html#promo" class="nav__link test-0-nav-1">Акции</a>
+                    <a href="index.html#search" class="nav__link test-0-nav-2">Поиск</a>
+                    <a href="hroom.html" class="nav__link test-0-nav-3">Бронирование</a>
+                    <a href="login.html" class="nav__link test-0-nav-4">Личный кабинет</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Результаты поиска -->
+    <section class="search-results">
+        <div class="container">
+            <h1 class="section-title">Результаты поиска</h1>
+            
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="city-filter">Город:</label>
+                    <select id="city-filter" class="form-control">
+                        <option value="all">Все города</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                        <option value="Сочи">Сочи</option>
+                        <option value="Казань">Казань</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort">Сортировка:</label>
+                    <select id="sort" class="form-control">
+                        <option value="price-asc">По возрастанию цены</option>
+                        <option value="price-desc">По убыванию цены</option>
+                        <option value="rating">По рейтингу</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-range">Цена:</label>
+                    <input type="range" id="price-range" class="form-control" min="1000" max="20000" step="500" value="20000">
+                    <div class="price-values">
+                        <span>1000 ₽</span>
+                        <span id="current-price">20000 ₽</span>
+                        <span>20000 ₽</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-grid">
+                <!-- Отель 1 -->
+                <div class="hotel-card">
+                    <div class="hotel-image">
+                        <img src="images/hotel1.jpg" alt="Отель 1">
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-header">
+                            <h2 class="hotel-name test-1-fon">Гранд Отель Европа</h2>
+                            <div class="hotel-rating test-1-fkat">
+                                ★★★★☆
+                            </div>
+                        </div>
+                        <div class="hotel-location test-1-foa">
+                            <svg><!-- Иконка локации --></svg>
+                            <span class="test-1-fg">Санкт-Петербург</span>, Невский пр., 1
+                        </div>
+                        <div class="hotel-details">
+                            <div class="detail test-1-fkom">
+                                <svg><!-- Иконка --></svg>
+                                <span>Комфорт</span>
+                            </div>
+                            <div class="detail test-1-fvm">
+                                <svg><!-- Иконка --></svg>
+                                <span>2 человека</span>
+                            </div>
+                            <div class="detail test-1-fpar">
+                                <svg><!-- Иконка --></svg>
+                                <span>Парковка</span>
+                            </div>
+                            <div class="detail test-1-ftr">
+                                <svg><!-- Иконка --></svg>
+                                <span>Трансфер</span>
+                            </div>
+                        </div>
+                        <div class="hotel-availability test-1-fn">
+                            Свободных номеров: 5
+                        </div>
+                        <div class="hotel-footer">
+                            <div class="hotel-price test-1-fst">
+                                8500 ₽ <span>/ ночь</span>
+                            </div>
+                            <div class="hotel-actions">
+                                <a href="hroom.html" class="btn btn-outline test-1-det">Подробнее</a>
+                                <a href="booking.html" class="btn btn-primary test-1-fbr">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Отель 2 -->
+                <div class="hotel-card">
+                    <div class="hotel-image">
+                        <img src="images/hotel2.jpg" alt="Отель 2">
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-header">
+                            <h2 class="hotel-name test-1-fon">Метрополь</h2>
+                            <div class="hotel-rating test-1-fkat">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="hotel-location test-1-foa">
+                            <svg><!-- Иконка локации --></svg>
+                            <span class="test-1-fg">Москва</span>, Театральный пр., 2
+                        </div>
+                        <div class="hotel-details">
+                            <div class="detail test-1-fkom">
+                                <svg><!-- Иконка --></svg>
+                                <span>Люкс</span>
+                            </div>
+                            <div class="detail test-1-fvm">
+                                <svg><!-- Иконка --></svg>
+                                <span>4 человека</span>
+                            </div>
+                            <div class="detail test-1-fpar">
+                                <svg><!-- Иконка --></svg>
+                                <span>Парковка</span>
+                            </div>
+                            <div class="detail test-1-ftr">
+                                <svg><!-- Иконка --></svg>
+                                <span>Трансфер</span>
+                            </div>
+                        </div>
+                        <div class="hotel-availability test-1-fn">
+                            Свободных номеров: 2
+                        </div>
+                        <div class="hotel-footer">
+                            <div class="hotel-price test-1-fst">
+                                15000 ₽ <span>/ ночь</span>
+                            </div>
+                            <div class="hotel-actions">
+                                <a href="hroom.html" class="btn btn-outline test-1-det">Подробнее</a>
+                                <a href="booking.html" class="btn btn-primary test-1-fbr">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Отель 3 -->
+                <div class="hotel-card">
+                    <div class="hotel-image">
+                        <img src="images/hotel3.jpg" alt="Отель 3">
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-header">
+                            <h2 class="hotel-name test-1-fon">Приморская</h2>
+                            <div class="hotel-rating test-1-fkat">
+                                ★★★☆☆
+                            </div>
+                        </div>
+                        <div class="hotel-location test-1-foa">
+                            <svg><!-- Иконка локации --></svg>
+                            <span class="test-1-fg">Сочи</span>, ул. Приморская, 5
+                        </div>
+                        <div class="hotel-details">
+                            <div class="detail test-1-fkom">
+                                <svg><!-- Иконка --></svg>
+                                <span>Стандарт</span>
+                            </div>
+                            <div class="detail test-1-fvm">
+                                <svg><!-- Иконка --></svg>
+                                <span>3 человека</span>
+                            </div>
+                            <div class="detail test-1-fpar">
+                                <svg><!-- Иконка --></svg>
+                                <span>Парковка</span>
+                            </div>
+                        </div>
+                        <div class="hotel-availability test-1-fn">
+                            Свободных номеров: 7
+                        </div>
+                        <div class="hotel-footer">
+                            <div class="hotel-price test-1-fst">
+                                5500 ₽ <span>/ ночь</span>
+                            </div>
+                            <div class="hotel-actions">
+                                <a href="hroom.html" class="btn btn-outline test-1-det">Подробнее</a>
+                                <a href="booking.html" class="btn btn-primary test-1-fbr">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <button class="btn btn-outline">Назад</button>
+                <button class="btn btn-primary">1</button>
+                <button class="btn btn-outline">2</button>
+                <button class="btn btn-outline">3</button>
+                <button class="btn btn-outline">Вперед</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <div class="footer__logo">HotelBooking</div>
+                    <div class="footer__phone test-0-phone">8 (800) 300-25-11</div>
+                </div>
+                <div class="footer__col">
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__link">Возврат</a>
+                        <a href="#" class="footer__link">Обратная связь</a>
+                        <a href="#" class="footer__link">О компании</a>
+                        <a href="#" class="footer__link">Контакты</a>
+                    </nav>
+                </div>
+                <div class="footer__col">
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="images/tg.jpg" alt="telegram" width="24" height="24">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="images/ico.jpg" alt="vk" width="24" height="24">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="images/tg.jpg" alt="telegram" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

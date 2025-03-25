@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelBooking - Личный кабинет</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="dark-theme">
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo test-0-logo">HotelBooking</a>
+                <nav class="nav">
+                    <a href="index.html#promo" class="nav__link test-0-nav-1">Акции</a>
+                    <a href="index.html#search" class="nav__link test-0-nav-2">Поиск</a>
+                    <a href="hroom.html" class="nav__link test-0-nav-3">Бронирование</a>
+                    <a href="profile.html" class="nav__link test-0-nav-4 active">Личный кабинет</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Личный кабинет -->
+    <section class="profile">
+        <div class="container">
+            <div class="profile-header">
+                <h1 class="section-title">Личный кабинет</h1>
+                <button class="btn btn-outline test-7-logout">Выйти</button>
+            </div>
+            
+            <div class="profile-content">
+                <div class="user-info">
+                    <div class="user-card">
+                        <div class="user-avatar">
+                            <svg><!-- Иконка пользователя --></svg>
+                        </div>
+                        <div class="user-details">
+                            <h2 class="user-name test-7-name">Иван</h2>
+                            <h3 class="user-lastname test-7-last">Иванов</h3>
+                            <div class="user-stats">
+                                <div class="stat-item">
+                                    <span>Бронирований:</span>
+                                    <strong class="test-7-num">3</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bookings">
+                    <h2>Предстоящие бронирования</h2>
+                    
+                    <div class="booking-card">
+                        <div class="booking-info">
+                            <div class="info-item test-7-code">
+                                <span>Код бронирования:</span>
+                                <strong>HB-2023-10-15678</strong>
+                            </div>
+                            <div class="info-item test-7-city">
+                                <span>Город:</span>
+                                <strong>Санкт-Петербург</strong>
+                            </div>
+                            <div class="info-item test-7-park">
+                                <span>Отель:</span>
+                                <strong>Гранд Отель Европа</strong>
+                            </div>
+                        </div>
+                        <div class="booking-dates">
+                            <div class="date-item test-7-d1">
+                                <span>Заезд:</span>
+                                <strong>15.10.2023</strong>
+                            </div>
+                            <div class="date-item test-7-d2">
+                                <span>Выезд:</span>
+                                <strong>20.10.2023</strong>
+                            </div>
+                        </div>
+                        <div class="booking-actions">
+                            <button class="btn btn-outline">Подробнее</button>
+                            <button class="btn btn-outline">Отменить</button>
+                        </div>
+                    </div>
+                    
+                    <div class="booking-card">
+                        <div class="booking-info">
+                            <div class="info-item test-7-code">
+                                <span>Код бронирования:</span>
+                                <strong>HB-2023-11-18765</strong>
+                            </div>
+                            <div class="info-item test-7-city">
+                                <span>Город:</span>
+                                <strong>Москва</strong>
+                            </div>
+                            <div class="info-item test-7-park">
+                                <span>Отель:</span>
+                                <strong>Метрополь</strong>
+                            </div>
+                        </div>
+                        <div class="booking-dates">
+                            <div class="date-item test-7-d1">
+                                <span>Заезд:</span>
+                                <strong>05.11.2023</strong>
+                            </div>
+                            <div class="date-item test-7-d2">
+                                <span>Выезд:</span>
+                                <strong>10.11.2023</strong>
+                            </div>
+                        </div>
+                        <div class="booking-actions">
+                            <button class="btn btn-outline">Подробнее</button>
+                            <button class="btn btn-outline">Отменить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <div class="footer__logo">HotelBooking</div>
+                    <div class="footer__phone test-0-phone">8 (800) 300-25-11</div>
+                </div>
+                <div class="footer__col">
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__link">Возврат</a>
+                        <a href="#" class="footer__link">Обратная связь</a>
+                        <a href="#" class="footer__link">О компании</a>
+                        <a href="#" class="footer__link">Контакты</a>
+                    </nav>
+                </div>
+                <div class="footer__col">
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="images/tg.jpg" alt="telegram" width="24" height="24">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="images/ico.jpg" alt="vk" width="24" height="24">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="images/tg.jpg" alt="telegram" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            <div class="footer__copyright">
+                Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Выход из личного кабинета
+            const logoutBtn = document.querySelector('.test-7-logout');
+            if (logoutBtn) {
+                logoutBtn.addEventListener('click', function() {
+                    // Здесь должна быть логика выхода
+                    window.location.href = 'login.html';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

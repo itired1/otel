@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelBooking - Управление бронированием</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="dark-theme">
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo test-0-logo">HotelBooking</a>
+                <nav class="nav">
+                    <a href="index.html#promo" class="nav__link test-0-nav-1">Акции</a>
+                    <a href="index.html#search" class="nav__link test-0-nav-2">Поиск</a>
+                    <a href="hroom.html" class="nav__link test-0-nav-3">Бронирование</a>
+                    <a href="login.html" class="nav__link test-0-nav-4">Личный кабинет</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Управление бронированием -->
+    <section class="booking-management">
+        <div class="container">
+            <h1 class="section-title">Управление бронированием</h1>
+            
+            <div class="booking-info">
+                <h2>Информация о бронировании</h2>
+                <div class="info-item">
+                    <span>Код бронирования:</span>
+                    <strong class="test-4-code">HB-2023-10-15678</strong>
+                </div>
+                <div class="info-item">
+                    <span>Стоимость бронирования:</span>
+                    <strong class="test-4-tp">62 500 ₽</strong>
+                </div>
+            </div>
+            
+            <div class="booking-details">
+                <h2>Детали бронирования</h2>
+                <div class="details-grid">
+                    <div class="detail-item test-4-fg">
+                        <span>Город:</span>
+                        <strong>Санкт-Петербург</strong>
+                    </div>
+                    <div class="detail-item test-4-fdt">
+                        <span>Дата заезда:</span>
+                        <strong>15.10.2023</strong>
+                    </div>
+                    <div class="detail-item test-4-fat">
+                        <span>Дата выезда:</span>
+                        <strong>20.10.2023</strong>
+                    </div>
+                    <div class="detail-item test-4-fd">
+                        <span>Вместимость:</span>
+                        <strong>2 человека</strong>
+                    </div>
+                    <div class="detail-item test-4-fa">
+                        <span>Комфортность:</span>
+                        <strong>Люкс</strong>
+                    </div>
+                    <div class="detail-item test-4-fper">
+                        <span>Количество человек:</span>
+                        <strong>2</strong>
+                    </div>
+                    <div class="detail-item test-4-fch">
+                        <span>Дети:</span>
+                        <strong>0</strong>
+                    </div>
+                    <div class="detail-item test-4-fop">
+                        <span>Отчетные документы:</span>
+                        <strong>Да</strong>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="clients-info">
+                <h2>Информация о клиентах</h2>
+                <div class="clients-table">
+                    <div class="table-header">
+                        <div>Код бронирования</div>
+                        <div>Имя</div>
+                        <div>Фамилия</div>
+                        <div>Дата рождения</div>
+                        <div>Документ</div>
+                        <div>Номер документа</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="test-4-ccode">HB-2023-10-15678</div>
+                        <div class="test-4-name">Иван</div>
+                        <div class="test-4-last">Иванов</div>
+                        <div class="test-4-dob">15.05.1985</div>
+                        <div class="test-4-dv">Паспорт РФ</div>
+                        <div class="test-4-doc">4510 123456</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="test-4-ccode">HB-2023-10-15678</div>
+                        <div class="test-4-name">Мария</div>
+                        <div class="test-4-last">Иванова</div>
+                        <div class="test-4-dob">20.08.1987</div>
+                        <div class="test-4-dv">Паспорт РФ</div>
+                        <div class="test-4-doc">4510 654321</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="additional-services">
+                <h2>Дополнительные услуги</h2>
+                <div class="services-grid test-4-dop">
+                    <div class="service-card">
+                        <div class="service-checkbox">
+                            <input type="checkbox" id="service-1">
+                        </div>
+                        <div class="service-info">
+                            <label for="service-1">Салон красоты</label>
+                            <span>3 000 ₽</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-checkbox">
+                            <input type="checkbox" id="service-2">
+                        </div>
+                        <div class="service-info">
+                            <label for="service-2">Бильярд</label>
+                            <span>1 500 ₽ / час</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-checkbox">
+                            <input type="checkbox" id="service-3">
+                        </div>
+                        <div class="service-info">
+                            <label for="service-3">Конференц-сервис</label>
+                            <span>5 000 ₽ / день</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-checkbox">
+                            <input type="checkbox" id="service-4">
+                        </div>
+                        <div class="service-info">
+                            <label for="service-4">Тренажерный зал</label>
+                            <span>1 000 ₽ / день</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="final-summary">
+                <h2>Итоговая стоимость</h2>
+                <div class="summary-card">
+                    <div class="summary-item">
+                        <span>Стоимость номера:</span>
+                        <strong>62 500 ₽</strong>
+                    </div>
+                    <div class="summary-item">
+                        <span>Дополнительные услуги:</span>
+                        <strong>0 ₽</strong>
+                    </div>
+                    <div class="summary-total test-4-its">
+                        <span>Итого к оплате:</span>
+                        <strong>62 500 ₽</strong>
+                    </div>
+                    <button class="btn btn-primary test-4-select">Подтвердить бронирование</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <div class="footer__logo">HotelBooking</div>
+                    <div class="footer__phone test-0-phone">8 (800) 300-25-11</div>
+                </div>
+                <div class="footer__col">
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__link">Возврат</a>
+                        <a href="#" class="footer__link">Обратная связь</a>
+                        <a href="#" class="footer__link">О компании</a>
+                        <a href="#" class="footer__link">Контакты</a>
+                    </nav>
+                </div>
+                <div class="footer__col">
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="images/tg.jpg" alt="telegram" width="24" height="24">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="images/ico.jpg" alt="vk" width="24" height="24">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="images/tg.jpg" alt="telegram" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

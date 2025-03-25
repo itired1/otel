@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelBooking - Выбор номера</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+</head>
+<body class="dark-theme">
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo test-0-logo">HotelBooking</a>
+                <nav class="nav">
+                    <a href="index.html#promo" class="nav__link test-0-nav-1">Акции</a>
+                    <a href="index.html#search" class="nav__link test-0-nav-2">Поиск</a>
+                    <a href="hroom.html" class="nav__link test-0-nav-3">Бронирование</a>
+                    <a href="login.html" class="nav__link test-0-nav-4">Личный кабинет</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Детали номера -->
+    <section class="room-details">
+        <div class="container">
+            <div class="room-header">
+                <h1 class="section-title test-2-nh">Номер "Люкс" с видом на море</h1>
+                <div class="room-location test-2-fg">
+                    <svg><!-- Иконка локации --></svg>
+                    <span>Санкт-Петербург, Невский пр., 1</span>
+                </div>
+            </div>
+            
+            <div class="room-content">
+                <div class="room-gallery">
+                    <div class="slider test-2-nf">
+                        <div><img src="images/room1.jpg" alt="Номер 1"></div>
+                        <div><img src="images/room2.jpg" alt="Номер 2"></div>
+                        <div><img src="images/room3.jpg" alt="Номер 3"></div>
+                    </div>
+                </div>
+                
+                <div class="room-info">
+                    <div class="room-specs">
+                        <div class="spec test-2-comf">
+                            <svg><!-- Иконка --></svg>
+                            <span>Комфорт: <strong>Люкс</strong></span>
+                        </div>
+                        <div class="spec test-2-nk">
+                            <svg><!-- Иконка --></svg>
+                            <span>Вместимость: <strong>2 человека</strong></span>
+                        </div>
+                        <div class="spec test-2-nsq">
+                            <svg><!-- Иконка --></svg>
+                            <span>Площадь: <strong>45 м²</strong></span>
+                        </div>
+                        <div class="spec test-2-avwf">
+                            <svg><!-- Иконка --></svg>
+                            <span>Wi-Fi: <strong>Есть</strong></span>
+                        </div>
+                    </div>
+                    
+                    <div class="room-description test-2-desc">
+                        <h3>Описание номера</h3>
+                        <p>Просторный номер категории люкс с панорамным видом на море. В номере: большая двуспальная кровать, гостиная зона с мягкой мебелью, рабочий стол, современная ванная комната с душевой кабиной и гидромассажной ванной. Из окон открывается прекрасный вид на город и море.</p>
+                        <p>Номер оснащен всем необходимым для комфортного проживания: кондиционер, телевизор с кабельными каналами, мини-бар, сейф, фен, халаты и тапочки.</p>
+                    </div>
+                    
+                    <div class="room-floor-plan">
+                        <h3>План этажа</h3>
+                        <img src="images/floor-plan.jpg" alt="План этажа" class="floor-plan">
+                    </div>
+                </div>
+                
+                <div class="room-booking">
+                    <div class="booking-card">
+                        <div class="price test-2-ns">
+                            12 500 ₽ <span>/ ночь</span>
+                        </div>
+                        <div class="booking-form">
+                            <div class="form-group">
+                                <label for="check-in">Дата заезда</label>
+                                <input type="date" id="check-in" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="check-out">Дата выезда</label>
+                                <input type="date" id="check-out" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Гости</label>
+                                <select id="guests" class="form-control">
+                                    <option value="1">1 взрослый</option>
+                                    <option value="2" selected>2 взрослых</option>
+                                    <option value="3">3 взрослых</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary btn-block test-2-bnb">Забронировать</button>
+                            <a href="search.html" class="btn btn-outline btn-block test-2-bns">Назад к результатам</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <div class="footer__logo">HotelBooking</div>
+                    <div class="footer__phone test-0-phone">8 (800) 300-25-11</div>
+                </div>
+                <div class="footer__col">
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__link">Возврат</a>
+                        <a href="#" class="footer__link">Обратная связь</a>
+                        <a href="#" class="footer__link">О компании</a>
+                        <a href="#" class="footer__link">Контакты</a>
+                    </nav>
+                </div>
+                <div class="footer__col">
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="images/tg.jpg" alt="telegram" width="24" height="24">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="images/ico.jpg" alt="vk" width="24" height="24">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="images/tg.jpg" alt="telegram" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelBooking - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="dark-theme">
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo test-0-logo">HotelBooking</a>
+                <nav class="nav">
+                    <a href="#promo" class="nav__link test-0-nav-1">Акции</a>
+                    <a href="#search" class="nav__link test-0-nav-2">Поиск</a>
+                    <a href="hroom.html" class="nav__link test-0-nav-3">Бронирование</a>
+                    <a href="login.html" class="nav__link test-0-nav-4">Личный кабинет</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Герой секция -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero__title">Бронируйте отели по лучшим ценам</h1>
+            <p class="hero__subtitle">Система автоматического снижения стоимости при длительном проживании</p>
+            <a href="#search" class="btn btn-primary">Найти отель</a>
+        </div>
+    </section>
+
+    <!-- Инфографика -->
+    <section class="infographic">
+        <div class="container">
+            <h2 class="section-title">Как мы снижаем цены</h2>
+            <div class="infographic__container">
+                <div class="infographic__item" id="infographic-1">
+                    <div class="infographic__icon">
+                        <svg class="animated-icon" viewBox="0 0 24 24">
+                            <!-- Иконка календаря -->
+                            <path fill="currentColor" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="infographic__title">Чем дольше - тем дешевле</h3>
+                    <p class="infographic__text">Скидка до 30% при бронировании от 7 дней</p>
+                    <div class="infographic__progress">
+                        <div class="progress-bar" data-value="70"></div>
+                    </div>
+                </div>
+                <div class="infographic__item" id="infographic-2">
+                    <div class="infographic__icon">
+                        <svg class="animated-icon" viewBox="0 0 24 24">
+                            <!-- Иконка людей -->
+                            <path fill="currentColor" d="M16,13C15.71,13 15.38,13 15.03,13.05C16.19,13.89 17,15 17,16.5V19H23V16.5C23,14.17 18.33,13 16,13M8,13C5.67,13 1,14.17 1,16.5V19H15V16.5C15,14.17 10.33,13 8,13M8,11A3,3 0 0,0 11,8A3,3 0 0,0 8,5A3,3 0 0,0 5,8A3,3 0 0,0 8,11M16,11A3,3 0 0,0 19,8A3,3 0 0,0 16,5A3,3 0 0,0 13,8A3,3 0 0,0 16,11Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="infographic__title">Чем больше - тем выгоднее</h3>
+                    <p class="infographic__text">Скидка до 15% при бронировании 3+ номеров</p>
+                    <div class="infographic__progress">
+                        <div class="progress-bar" data-value="50"></div>
+                    </div>
+                </div>
+                <div class="infographic__item" id="infographic-3">
+                    <div class="infographic__icon">
+                        <svg class="animated-icon" viewBox="0 0 24 24">
+                            <!-- Иконка звезды -->
+                            <path fill="currentColor" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="infographic__title">Выбирайте категорию</h3>
+                    <p class="infographic__text">Лучшие предложения для 4-5 звезд</p>
+                    <div class="infographic__progress">
+                        <div class="progress-bar" data-value="85"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="infographic__demo">
+                <h3>Проверьте свою выгоду</h3>
+                <form id="demo-form">
+                    <div class="form-group">
+                        <label for="demo-city" class="test-0-fg">Город</label>
+                        <select id="demo-city" class="form-control">
+                            <option value="moscow">Москва</option>
+                            <option value="spb">Санкт-Петербург</option>
+                            <option value="sochi">Сочи</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="demo-days" class="test-0-fper">Количество дней</label>
+                        <input type="number" id="demo-days" class="form-control" min="1" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="demo-category" class="test-0-fa">Категория отеля</label>
+                        <select id="demo-category" class="form-control">
+                            <option value="3">3 звезды</option>
+                            <option value="4">4 звезды</option>
+                            <option value="5">5 звезд</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-secondary" id="calculate-btn">Рассчитать</button>
+                </form>
+                <div class="demo-result">
+                    <h4>Ваша потенциальная экономия:</h4>
+                    <div class="result-value" id="result-value">0%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма поиска -->
+    <section class="search-section" id="search">
+        <div class="container">
+            <h2 class="section-title">Найти отель</h2>
+            <form id="test-0-search" class="search-form">
+                <div class="form-row">
+                    <div class="form-group test-0-fg">
+                        <label for="city">Город</label>
+                        <select id="city" class="form-control" required>
+                            <option value="">Выберите город</option>
+                            <option value="moscow">Москва</option>
+                            <option value="spb">Санкт-Петербург</option>
+                            <option value="sochi">Сочи</option>
+                            <option value="kazan">Казань</option>
+                        </select>
+                    </div>
+                    <div class="form-group test-0-fdt">
+                        <label for="check-in">Дата заселения</label>
+                        <input type="date" id="check-in" class="form-control" required>
+                    </div>
+                    <div class="form-group test-0-fat">
+                        <label for="check-out">Дата выселения</label>
+                        <input type="date" id="check-out" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group test-0-fd">
+                        <label for="capacity">Вместимость</label>
+                        <select id="capacity" class="form-control">
+                            <option value="1">1 человек</option>
+                            <option value="2">2 человека</option>
+                            <option value="3">3 человека</option>
+                            <option value="4">4 человека</option>
+                            <option value="family">Семейный номер</option>
+                        </select>
+                    </div>
+                    <div class="form-group test-0-fa">
+                        <label for="comfort">Комфортность</label>
+                        <select id="comfort" class="form-control">
+                            <option value="standard">Стандарт</option>
+                            <option value="comfort">Комфорт</option>
+                            <option value="luxury">Люкс</option>
+                        </select>
+                    </div>
+                    <div class="form-group test-0-fper">
+                        <label for="adults">Количество взрослых</label>
+                        <input type="number" id="adults" class="form-control" min="1" value="1">
+                    </div>
+                    <div class="form-group test-0-fch">
+                        <label for="children">Количество детей</label>
+                        <input type="number" id="children" class="form-control" min="0" value="0">
+                    </div>
+                </div>
+                <div class="form-check test-0-fop">
+                    <input type="checkbox" id="documents" class="form-check-input">
+                    <label for="documents" class="form-check-label">Нужны отчетные документы</label>
+                </div>
+                <button type="submit" class="btn btn-primary test-0-fbs">Найти номер</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title">Наши преимущества</h2>
+            <div class="advantages__grid">
+                <div class="advantages__grid">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 15l8-8m0 0l-8-8m8 8h-16" />
+                                <circle cx="12" cy="12" r="10" />
+                            </svg>
+                        </div>
+                        <h3>Гарантия лучшей цены</h3>
+                        <p>Если найдете дешевле - вернем разницу</p>
+                    </div>
+                    
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            </svg>
+                        </div>
+                        <h3>Бесплатная отмена</h3>
+                        <p>Отмена бронирования без штрафов</p>
+                    </div>
+                    
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                        </div>
+                        <h3>Поддержка 24/7</h3>
+                        <p>Круглосуточная помощь гостям</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Акции -->
+    <section class="promo" id="promo">
+        <div class="container">
+            <h2 class="section-title">Акции и спецпредложения</h2>
+            <div class="promo__grid">
+                <div class="promo-card test-0-prom">
+                    <div class="promo-image test-0-ai">
+                        <img src="images/promo1.png" alt="Акция 1">
+                    </div>
+                    <div class="promo-content">
+                        <h3 class="promo-title test-0-an">Раннее бронирование</h3>
+                        <p class="promo-text test-0-ad">Забронируйте номер за 3 месяца до заезда и получите скидку 25%</p>
+                        <a href="#" class="btn btn-outline test-0-abm">Подробнее</a>
+                    </div>
+                </div>
+                <div class="promo-card test-0-prom">
+                    <div class="promo-image test-0-ai">
+                        <img src="images/promo2.jpg" alt="Акция 2">
+                    </div>
+                    <div class="promo-content">
+                        <h3 class="promo-title test-0-an">Долгий отпуск</h3>
+                        <p class="promo-text test-0-ad">Скидка 15% при бронировании от 14 дней</p>
+                        <a href="#" class="btn btn-outline test-0-abm">Подробнее</a>
+                    </div>
+                </div>
+                <div class="promo-card test-0-prom">
+                    <div class="promo-image test-0-ai">
+                        <img src="images/promo3.jpg" alt="Акция 3">
+                    </div>
+                    <div class="promo-content">
+                        <h3 class="promo-title test-0-an">Семейный отдых</h3>
+                        <p class="promo-text test-0-ad">Дети до 12 лет размещаются бесплатно</p>
+                        <a href="#" class="btn btn-outline test-0-abm">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма подписки -->
+    <section class="subscribe" id="test-0-feedback">
+        <div class="container">
+            <h2 class="section-title">Подпишитесь на закрытые акции</h2>
+            <p>Получайте эксклюзивные предложения на почту</p>
+            <form class="subscribe-form">
+                <div class="form-group test-0-sie">
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Ваш email" required>
+                </div>
+                <button type="submit" class="btn btn-primary test-0-sbs">Подписаться</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <div class="footer__logo">HotelBooking</div>
+                    <div class="footer__phone test-0-phone">8 (800) 300-25-11</div>
+                </div>
+                <div class="footer__col">
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__link">Возврат</a>
+                        <a href="#" class="footer__link">Обратная связь</a>
+                        <a href="#" class="footer__link">О компании</a>
+                        <a href="#" class="footer__link">Контакты</a>
+                    </nav>
+                </div>
+                <div class="footer__col">
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="images/tg.jpg" alt="telegram" width="24" height="24">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="images/ico.jpg" alt="vk" width="24" height="24">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="images/tg.jpg" alt="telegram" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                    Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
