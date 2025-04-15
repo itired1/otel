@@ -3,106 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HotelBooking - Выбор номера</title>
+    <title>HotelBooking - Бронирование</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 </head>
 <body class="dark-theme">
     <!-- Шапка сайта -->
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="index.html" class="logo test-0-logo">HotelBooking</a>
+                <a href="index.html" class="logo">HotelBooking</a>
                 <nav class="nav">
-                    <a href="index.html#promo" class="nav__link test-0-nav-1">Акции</a>
-                    <a href="index.html#search" class="nav__link test-0-nav-2">Поиск</a>
-                    <a href="hroom.html" class="nav__link test-0-nav-3">Бронирование</a>
-                    <a href="login.html" class="nav__link test-0-nav-4">Личный кабинет</a>
+                    <a href="index.html#promo" class="nav__link">Акции</a>
+                    <a href="index.html#search" class="nav__link">Поиск</a>
+                    <a href="hroom.html" class="nav__link">Бронирование</a>
+                    <a href="login.html" class="nav__link">Личный кабинет</a>
                 </nav>
             </div>
         </div>
     </header>
 
-    <!-- Детали номера -->
-    <section class="room-details">
+    <!-- Бронирование -->
+    <section class="booking-section">
         <div class="container">
-            <div class="room-header">
-                <h1 class="section-title test-2-nh">Номер "Люкс" с видом на море</h1>
-                <div class="room-location test-2-fg">
-                    <svg><!-- Иконка локации --></svg>
-                    <span>Санкт-Петербург, Невский пр., 1</span>
+            <h1 class="section-title">Выберите отель для бронирования</h1>
+            
+            <div class="booking-grid">
+                <!-- Отель 1 - Гранд Отель Европа -->
+                <div class="booking-card">
+                    <img src="images/hotel1.jpg" alt="Гранд Отель Европа" class="hotel-image">
+                    <div class="hotel-info">
+                        <div class="hotel-header">
+                            <h2 class="hotel-name">Гранд Отель Европа</h2>
+                            <div class="hotel-rating">
+                                ★★★★☆
+                            </div>
+                        </div>
+                        <div class="hotel-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#bbbbbb" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"/>
+                            </svg>
+                            <span>Санкт-Петербург, Невский пр., 1</span>
+                        </div>
+                        <div class="hotel-details">
+                            <div class="detail">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#4d90fe" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 13H11V3H3V13ZM3 21H11V15H3V21ZM13 21H21V11H13V21ZM13 3V9H21V3H13Z"/>
+                                </svg>
+                                <span>Комфорт</span>
+                            </div>
+                            <div class="detail">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#4d90fe" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 11C17.66 11 18.99 9.66 18.99 8C18.99 6.34 17.66 5 16 5C14.34 5 13 6.34 13 8C13 9.66 14.34 11 16 11ZM8 11C9.66 11 10.99 9.66 10.99 8C10.99 6.34 9.66 5 8 5C6.34 5 5 6.34 5 8C5 9.66 6.34 11 8 11ZM8 13C5.67 13 1 14.17 1 16.5V19H15V16.5C15 14.17 10.33 13 8 13ZM16 13C15.71 13 15.38 13.02 15.03 13.05C16.19 13.89 17 15.02 17 16.5V19H23V16.5C23 14.17 18.33 13 16 13Z"/>
+                                </svg>
+                                <span>2 человека</span>
+                            </div>
+                            <div class="detail">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#4d90fe" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 5H17V2H7V5H4C2.9 5 2 5.9 2 7V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V7C22 5.9 21.1 5 20 5ZM7 9H9V12H15V9H17V19H7V9Z"/>
+                                </svg>
+                                <span>Парковка</span>
+                            </div>
+                        </div>
+                        <div class="hotel-availability">
+                            Свободных номеров: 5
+                        </div>
+                        <div class="hotel-footer">
+                            <div class="hotel-price">
+                                8500 ₽ <span>/ ночь</span>
+                            </div>
+                            <div class="hotel-actions">
+                                <a href="#booking-form" class="btn btn-primary">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Отель 2 - Метрополь -->
+                <div class="booking-card">
+                    <img src="images/hotel2.jpg" alt="Метрополь" class="hotel-image">
+                    <div class="hotel-info">
+                        <div class="hotel-header">
+                            <h2 class="hotel-name">Метрополь</h2>
+                            <div class="hotel-rating">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="hotel-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#bbbbbb" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"/>
+                            </svg>
+                            <span>Москва, Театральный пр., 2</span>
+                        </div>
+                        <div class="hotel-details">
+                            <div class="detail">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#4d90fe" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 13H11V3H3V13ZM3 21H11V15H3V21ZM13 21H21V11H13V21ZM13 3V9H21V3H13Z"/>
+                                </svg>
+                                <span>Люкс</span>
+                            </div>
+                            <div class="detail">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#4d90fe" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 11C17.66 11 18.99 9.66 18.99 8C18.99 6.34 17.66 5 16 5C14.34 5 13 6.34 13 8C13 9.66 14.34 11 16 11ZM8 11C9.66 11 10.99 9.66 10.99 8C10.99 6.34 9.66 5 8 5C6.34 5 5 6.34 5 8C5 9.66 6.34 11 8 11ZM8 13C5.67 13 1 14.17 1 16.5V19H15V16.5C15 14.17 10.33 13 8 13ZM16 13C15.71 13 15.38 13.02 15.03 13.05C16.19 13.89 17 15.02 17 16.5V19H23V16.5C23 14.17 18.33 13 16 13Z"/>
+                                </svg>
+                                <span>4 человека</span>
+                            </div>
+                            <div class="detail">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#4d90fe" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 5H17V2H7V5H4C2.9 5 2 5.9 2 7V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V7C22 5.9 21.1 5 20 5ZM7 9H9V12H15V9H17V19H7V9Z"/>
+                                </svg>
+                                <span>Парковка</span>
+                            </div>
+                            <div class="detail">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#4d90fe" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 20 12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4ZM12.5 7V12.25L17 14.92L16.25 16.15L11 13V7H12.5Z"/>
+                                </svg>
+                                <span>Трансфер</span>
+                            </div>
+                        </div>
+                        <div class="hotel-availability">
+                            Свободных номеров: 2
+                        </div>
+                        <div class="hotel-footer">
+                            <div class="hotel-price">
+                                15000 ₽ <span>/ ночь</span>
+                            </div>
+                            <div class="hotel-actions">
+                                <a href="#booking-form" class="btn btn-primary">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Отель 3 - Приморская -->
+                <div class="booking-card">
+                    <img src="images/hotel3.jpg" alt="Приморская" class="hotel-image">
+                    <div class="hotel-info">
+                        <div class="hotel-header">
+                            <h2 class="hotel-name">Приморская</h2>
+                            <div class="hotel-rating">
+                                ★★★☆☆
+                            </div>
+                        </div>
+                        <div class="hotel-location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#bbbbbb" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"/>
+                            </svg>
+                            <span>Сочи, ул. Приморская, 5</span>
+                        </div>
+                        <div class="hotel-details">
+                            <div class="detail">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#4d90fe" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 13H11V3H3V13ZM3 21H11V15H3V21ZM13 21H21V11H13V21ZM13 3V9H21V3H13Z"/>
+                                </svg>
+                                <span>Стандарт</span>
+                            </div>
+                            <div class="detail">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#4d90fe" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 11C17.66 11 18.99 9.66 18.99 8C18.99 6.34 17.66 5 16 5C14.34 5 13 6.34 13 8C13 9.66 14.34 11 16 11ZM8 11C9.66 11 10.99 9.66 10.99 8C10.99 6.34 9.66 5 8 5C6.34 5 5 6.34 5 8C5 9.66 6.34 11 8 11ZM8 13C5.67 13 1 14.17 1 16.5V19H15V16.5C15 14.17 10.33 13 8 13ZM16 13C15.71 13 15.38 13.02 15.03 13.05C16.19 13.89 17 15.02 17 16.5V19H23V16.5C23 14.17 18.33 13 16 13Z"/>
+                                </svg>
+                                <span>3 человека</span>
+                            </div>
+                            <div class="detail">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#4d90fe" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 5H17V2H7V5H4C2.9 5 2 5.9 2 7V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V7C22 5.9 21.1 5 20 5ZM7 9H9V12H15V9H17V19H7V9Z"/>
+                                </svg>
+                                <span>Парковка</span>
+                            </div>
+                        </div>
+                        <div class="hotel-availability">
+                            Свободных номеров: 7
+                        </div>
+                        <div class="hotel-footer">
+                            <div class="hotel-price">
+                                5500 ₽ <span>/ ночь</span>
+                            </div>
+                            <div class="hotel-actions">
+                                <a href="#booking-form" class="btn btn-primary">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="room-content">
-                <div class="room-gallery">
-                    <div class="slider test-2-nf">
-                        <div><img src="images/room1.jpg" alt="Номер 1"></div>
-                        <div><img src="images/room2.jpg" alt="Номер 2"></div>
-                        <div><img src="images/room3.jpg" alt="Номер 3"></div>
-                    </div>
-                </div>
-                
-                <div class="room-info">
-                    <div class="room-specs">
-                        <div class="spec test-2-comf">
-                            <svg><!-- Иконка --></svg>
-                            <span>Комфорт: <strong>Люкс</strong></span>
+            <!-- Форма бронирования -->
+            <div class="booking-form" id="booking-form">
+                <h2 class="form-title">Форма бронирования</h2>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="hotel">Отель</label>
+                            <select id="hotel" class="form-control">
+                                <option value="Гранд Отель Европа">Гранд Отель Европа</option>
+                                <option value="Метрополь">Метрополь</option>
+                                <option value="Приморская">Приморская</option>
+                            </select>
                         </div>
-                        <div class="spec test-2-nk">
-                            <svg><!-- Иконка --></svg>
-                            <span>Вместимость: <strong>2 человека</strong></span>
-                        </div>
-                        <div class="spec test-2-nsq">
-                            <svg><!-- Иконка --></svg>
-                            <span>Площадь: <strong>45 м²</strong></span>
-                        </div>
-                        <div class="spec test-2-avwf">
-                            <svg><!-- Иконка --></svg>
-                            <span>Wi-Fi: <strong>Есть</strong></span>
+                        <div class="form-group">
+                            <label for="room-type">Тип номера</label>
+                            <select id="room-type" class="form-control">
+                                <option value="Стандарт">Стандарт</option>
+                                <option value="Комфорт">Комфорт</option>
+                                <option value="Люкс">Люкс</option>
+                            </select>
                         </div>
                     </div>
                     
-                    <div class="room-description test-2-desc">
-                        <h3>Описание номера</h3>
-                        <p>Просторный номер категории люкс с панорамным видом на море. В номере: большая двуспальная кровать, гостиная зона с мягкой мебелью, рабочий стол, современная ванная комната с душевой кабиной и гидромассажной ванной. Из окон открывается прекрасный вид на город и море.</p>
-                        <p>Номер оснащен всем необходимым для комфортного проживания: кондиционер, телевизор с кабельными каналами, мини-бар, сейф, фен, халаты и тапочки.</p>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="check-in">Дата заезда</label>
+                            <input type="date" id="check-in" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="check-out">Дата выезда</label>
+                            <input type="date" id="check-out" class="form-control">
+                        </div>
                     </div>
                     
-                    <div class="room-floor-plan">
-                        <h3>План этажа</h3>
-                        <img src="images/floor-plan.jpg" alt="План этажа" class="floor-plan">
-                    </div>
-                </div>
-                
-                <div class="room-booking">
-                    <div class="booking-card">
-                        <div class="price test-2-ns">
-                            12 500 ₽ <span>/ ночь</span>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guests">Количество гостей</label>
+                            <select id="guests" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
                         </div>
-                        <div class="booking-form">
-                            <div class="form-group">
-                                <label for="check-in">Дата заезда</label>
-                                <input type="date" id="check-in" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="check-out">Дата выезда</label>
-                                <input type="date" id="check-out" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="guests">Гости</label>
-                                <select id="guests" class="form-control">
-                                    <option value="1">1 взрослый</option>
-                                    <option value="2" selected>2 взрослых</option>
-                                    <option value="3">3 взрослых</option>
-                                </select>
-                            </div>
-                            <button class="btn btn-primary btn-block test-2-bnb">Забронировать</button>
-                            <a href="search.html" class="btn btn-outline btn-block test-2-bns">Назад к результатам</a>
+                        <div class="form-group">
+                            <label for="price">Цена</label>
+                            <input type="text" id="price" class="form-control" readonly value="Выберите отель и даты">
                         </div>
                     </div>
-                </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">ФИО</label>
+                            <input type="text" id="name" class="form-control" placeholder="Введите ваше полное имя">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="+7 (XXX) XXX-XX-XX">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Введите ваш email">
+                        </div>
+                        <div class="form-group">
+                            <label for="comments">Комментарии</label>
+                            <input type="text" id="comments" class="form-control" placeholder="Дополнительные пожелания">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Подтвердить бронирование</button>
+                </form>
             </div>
         </div>
     </section>
@@ -113,7 +270,7 @@
             <div class="footer__inner">
                 <div class="footer__col">
                     <div class="footer__logo">HotelBooking</div>
-                    <div class="footer__phone test-0-phone">8 (800) 300-25-11</div>
+                    <div class="footer__phone">8 (800) 300-25-11</div>
                 </div>
                 <div class="footer__col">
                     <nav class="footer__nav">
@@ -126,13 +283,13 @@
                 <div class="footer__col">
                     <div class="social-links">
                         <a href="#" class="social-link">
-                            <img src="images/tg.jpg" alt="telegram" width="24" height="24">
+                            <img src="https://via.placeholder.com/24/bbbbbb/333333?text=TG" alt="telegram">
                         </a>
                         <a href="#" class="social-link">
-                            <img src="images/ico.jpg" alt="vk" width="24" height="24">
+                            <img src="https://via.placeholder.com/24/bbbbbb/333333?text=VK" alt="vk">
                         </a>
                         <a href="#" class="social-link">
-                            <img src="images/tg.jpg" alt="telegram" width="24" height="24">
+                            <img src="https://via.placeholder.com/24/bbbbbb/333333?text=WA" alt="whatsapp">
                         </a>
                     </div>
                 </div>
@@ -143,20 +300,36 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $('.slider').slick({
-                dots: true,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 1,
-                adaptiveHeight: true,
-                autoplay: true,
-                autoplaySpeed: 3000
-            });
+        // Установка минимальной даты для бронирования (сегодня)
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('check-in').min = today;
+        
+        // Обновление минимальной даты выезда при изменении даты заезда
+        document.getElementById('check-in').addEventListener('change', function() {
+            document.getElementById('check-out').min = this.value;
+        });
+        
+        // Обновление цены при выборе отеля
+        document.getElementById('hotel').addEventListener('change', function() {
+            const hotel = this.value;
+            let price = '';
+            
+            switch(hotel) {
+                case 'Гранд Отель Европа':
+                    price = '8500 ₽ / ночь';
+                    break;
+                case 'Метрополь':
+                    price = '15000 ₽ / ночь';
+                    break;
+                case 'Приморская':
+                    price = '5500 ₽ / ночь';
+                    break;
+                default:
+                    price = 'Выберите отель и даты';
+            }
+            
+            document.getElementById('price').value = price;
         });
     </script>
 </body>
